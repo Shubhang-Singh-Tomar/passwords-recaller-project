@@ -8,7 +8,7 @@ ask_message = ("do you want me to recall a password for you")           # asking
 ask_message += ("\nor learn a new one ?")
 user_order = input (ask_message.title())                                # displays the ask_message
 
-if (user_order.lower() = "recall" or "recall a password") then :
+if (user_order.lower() == "recall" or "recall a password"):
     print ("recalling password protocol ...")
-elif (user_order.lower() = "learn" or "learn a new password") then :
+elif (user_order.lower() == "learn" or "learn a new password"):
     print ("learn new password protocol ...")
