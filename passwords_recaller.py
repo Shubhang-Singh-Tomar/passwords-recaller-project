@@ -5,17 +5,20 @@ To do :
 - complete the key medium
 - complete the value medium
 - random number generator and use the same for greeting statements and unexpected values
-- add more greeting statements and unexpected inputs 
 '''
 
-greetings_statements = [                                               # these are greeting statements 
+ending_statements = [                                               # these are greeting statements 
     'See you later',                                                   # that are to be displayed at the end.
     'Goodbye',
-    'Hope to see you soon'
+    'Hope to see you soon',
+    'Have a great day',
+    'Sayonara'
     ]   
 unexpected_inputs = [                                                  # these statements are to be displayed in case of 
     'Sorry, i didn`t get that',                                        # unexpected inputs from user.
-    'Invalid value or input'
+    'Invalid value or input',
+    'Something went wrong',
+    'Process unsuccessful'
     ]
 
 pass_codes = {}                                                        # will store the key(account`s username) and values(passwords)                               
@@ -36,7 +39,7 @@ def recalling_password_protocol() :                                    # recalli
         if (rerun.lower() == "yes" or "definitely" or "would love to") :
             rerun()
         elif (rerun.lower() == "no" or "no thanks") :
-            print (greetings_statements[0])
+            print (ending_statements[0])
         else :
             print (unexpected_inputs[0])
     elif (user_choice.lower() == "value-medium" or "i would like to go with the value-medium"):
@@ -47,7 +50,7 @@ def recalling_password_protocol() :                                    # recalli
         if (rerun.lower() == "yes" or "definitely" or "would love to") :
             rerun()
         elif (rerun.lower() == "no" or "no thanks") :
-            print (greetings_statements[0])
+            print (ending_statements[0])
         else :
             print (unexpected_inputs[0])
     else :
@@ -70,7 +73,7 @@ def learn_new_password_protocol() :                                    # learn_n
     if (rerun.lower() == "yes" or "definitely" or "would love to") :
         rerun()
     elif (rerun.lower() == "no" or "no thanks") :
-        print (greetings_statements[0])
+        print (ending_statements[0])
     else :
         print (unexpected_inputs[0])
 
